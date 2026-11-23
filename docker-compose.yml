@@ -3,6 +3,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.frontend
-    container_name: digitalwerk_frontend
+    container_name: puredigital_frontend
     ports:
       - "3000:80"

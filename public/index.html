@@ -1,43 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IE">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <title>Pure Digital | App Developers in Dublin, Ireland: iOS, Android &amp; Web Apps</title>
+    <meta name="description" content="Pure Digital is a Dublin app development studio. We design and build iOS, Android and web apps for startups, small businesses and sports organisations across Ireland, the UK and Europe." />
+    <link rel="canonical" href="https://puredigital.ie/" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#0b0b0c" />
+    <meta name="geo.region" content="IE-D" />
+    <meta name="geo.placename" content="Dublin" />
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>Pure Digital - Just Pure</title>
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/apple-touch-icon.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!-- Open Graph / social sharing -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Pure Digital" />
+    <meta property="og:locale" content="en_IE" />
+    <meta property="og:url" content="https://puredigital.ie/" />
+    <meta property="og:title" content="Pure Digital | App Developers in Dublin, Ireland" />
+    <meta property="og:description" content="We design and build iOS, Android and web apps, from first sketch to App Store launch." />
+    <meta property="og:image" content="https://puredigital.ie/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Pure Digital: Just Pure. Digital innovation. App developers in Dublin." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Pure Digital | App Developers in Dublin, Ireland" />
+    <meta name="twitter:description" content="We design and build iOS, Android and web apps, from first sketch to App Store launch." />
+    <meta name="twitter:image" content="https://puredigital.ie/og-image.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+    <link rel="preload" as="image" href="%PUBLIC_URL%/hero-poster.jpg" />
+
+    <!-- Structured data: who we are (entity for Google + AI answer engines) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://puredigital.ie/#organization",
+          "name": "Pure Digital",
+          "alternateName": "Pure Digital Ireland",
+          "slogan": "Just Pure. Digital innovation.",
+          "url": "https://puredigital.ie/",
+          "logo": "https://puredigital.ie/logo512.png",
+          "image": "https://puredigital.ie/og-image.png",
+          "email": "hello@puredigital.ie",
+          "description": "Pure Digital is an app development studio in Dublin, Ireland, designing and building iOS, Android and web apps for startups, small businesses and sports organisations.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Dublin",
+            "addressRegion": "County Dublin",
+            "addressCountry": "IE"
+          },
+          "areaServed": [
+            { "@type": "Country", "name": "Ireland" },
+            { "@type": "Country", "name": "United Kingdom" },
+            { "@type": "Place", "name": "Europe" }
+          ],
+          "knowsAbout": ["iOS app development", "Android app development", "Web app development", "Cross-platform apps", "UX design", "UI design", "AI integration", "Sports apps"],
+          "sameAs": ["https://instagram.com/wearepuredigital"],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "App development services",
+            "itemListElement": [
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "iOS and Android app development" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Web app and platform development" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Product design and UX" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI features and integrations" } }
+            ]
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://puredigital.ie/#website",
+          "url": "https://puredigital.ie/",
+          "name": "Pure Digital",
+          "inLanguage": "en-IE",
+          "publisher": { "@id": "https://puredigital.ie/#organization" }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://puredigital.ie/#faq",
+          "mainEntity": [
+            { "@type": "Question", "name": "What does Pure Digital do?", "acceptedAnswer": { "@type": "Answer", "text": "Pure Digital is an app development studio in Dublin, Ireland. We design and build iOS, Android and web apps for startups, small businesses and sports organisations, from first idea to launch and beyond." } },
+            { "@type": "Question", "name": "Do you only work with businesses in Dublin?", "acceptedAnswer": { "@type": "Answer", "text": "No. We are based in Dublin and work with clients across Ireland, the UK and Europe. Most projects run remotely, and we are happy to meet in person in Dublin." } },
+            { "@type": "Question", "name": "Do you build apps for both iPhone and Android?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We build for iOS and Android, either natively or with a single cross-platform codebase, depending on what suits your product and budget best. We also build web apps." } },
+            { "@type": "Question", "name": "How much does it cost to build an app in Ireland?", "acceptedAnswer": { "@type": "Answer", "text": "It depends on the features, platforms and integrations you need. After a free discovery call we give you a clear, itemised estimate so there are no surprises." } },
+            { "@type": "Question", "name": "Can you help after the app is launched?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We offer ongoing support, maintenance, updates for new iOS and Android versions, and new feature development once your app is live." } },
+            { "@type": "Question", "name": "How do I start a project with Pure Digital?", "acceptedAnswer": { "@type": "Answer", "text": "Email hello@puredigital.ie with a few lines about your idea. We will set up a free discovery call to talk through goals, timeline and budget." } }
+          ]
+        }
+      ]
+    }
+    </script>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <div id="root">
+      <!--
+        Crawler-readable fallback. Search engines and AI crawlers (GPTBot, ClaudeBot,
+        PerplexityBot...) often don't run JavaScript, so this plain HTML is what they read.
+        React replaces it on load. Keep it in sync with src/content.js.
+      -->
+      <header><a href="/"><strong>Pure Digital</strong></a></header>
+      <main>
+        <h1>Pure Digital: app developers in Dublin, Ireland</h1>
+        <p>Just Pure. Digital innovation. We design and build iOS, Android and web apps for ambitious founders, small businesses and sports organisations, from first sketch to App Store launch.</p>
+        <h2>What we build</h2>
+        <ul>
+          <li><strong>iOS &amp; Android apps</strong>: native-quality mobile apps, from first prototype to App Store and Google Play release.</li>
+          <li><strong>Web apps &amp; platforms</strong>: customer portals, booking systems, dashboards and SaaS products.</li>
+          <li><strong>Product design &amp; UX</strong>: workshops, user journeys, wireframes, prototypes and polished UI.</li>
+          <li><strong>AI features &amp; integrations</strong>: smart search, assistants and automation, built with privacy and GDPR in mind.</li>
+        </ul>
+        <h2>How we work</h2>
+        <ol>
+          <li>Discover: a free call, then a clear scope and estimate.</li>
+          <li>Design: clickable prototypes tested with real users.</li>
+          <li>Build: short sprints with a working build every week.</li>
+          <li>Launch &amp; grow: store release, analytics and ongoing support.</li>
+        </ol>
+        <h2>FAQ</h2>
+        <h3>What does Pure Digital do?</h3>
+        <p>Pure Digital is an app development studio in Dublin, Ireland. We design and build iOS, Android and web apps for startups, small businesses and sports organisations, from first idea to launch and beyond.</p>
+        <h3>Do you only work with businesses in Dublin?</h3>
+        <p>No. We are based in Dublin and work with clients across Ireland, the UK and Europe. Most projects run remotely, and we are happy to meet in person in Dublin.</p>
+        <h3>Do you build apps for both iPhone and Android?</h3>
+        <p>Yes. We build for iOS and Android, either natively or with a single cross-platform codebase, depending on what suits your product and budget best. We also build web apps.</p>
+        <h3>How much does it cost to build an app in Ireland?</h3>
+        <p>It depends on the features, platforms and integrations you need. After a free discovery call we give you a clear, itemised estimate so there are no surprises.</p>
+        <h3>Can you help after the app is launched?</h3>
+        <p>Yes. We offer ongoing support, maintenance, updates for new iOS and Android versions, and new feature development once your app is live.</p>
+        <h3>How do I start a project with Pure Digital?</h3>
+        <p>Email hello@puredigital.ie with a few lines about your idea. We will set up a free discovery call to talk through goals, timeline and budget.</p>
+      </main>
+      <footer>
+        <p><a href="mailto:hello@puredigital.ie">hello@puredigital.ie</a> · Dublin, Ireland · <a href="https://instagram.com/wearepuredigital">Instagram @wearepuredigital</a></p>
+      </footer>
+    </div>
   </body>
 </html>
