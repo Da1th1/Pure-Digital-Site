@@ -1,0 +1,21 @@
+# Pure Digital
+
+> Pure Digital is an app development studio based in Dublin, Ireland. We design and build iOS, Android and web apps for startups, small businesses and sports organisations across Ireland, the UK and Europe.
+
+## Services
+- iOS & Android app development: native or cross-platform, from prototype to App Store and Google Play release
+- Web apps & platforms: customer portals, booking systems, dashboards, SaaS products
+- Product design & UX: discovery workshops, user journeys, wireframes, prototypes, UI design
+- AI features & integrations: smart search, assistants, automation, GDPR-aware data features
+
+## How we work
+1. Discover: free discovery call, clear scope and itemised estimate
+2. Design: clickable prototypes tested with real users
+3. Build: short sprints, a working build every week
+4. Launch & grow: store release, analytics, ongoing support and maintenance
+
+## Contact
+- Website: https://puredigital.ie/
+- Email: hello@puredigital.ie
+- Instagram: https://instagram.com/wearepuredigital
+- Location: Dublin, Ireland (works remotely with clients in Ireland, the UK and Europe)
